@@ -3,379 +3,122 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>[Your Business Name] — Tech Solutions for Homes &amp; Small Business</title>
-<meta name="description" content="PC repair, custom builds, home networking, security cameras, media servers, data backup, and the tech projects nobody else wants to take on. Serving [Service Area].">
+<title>Your Tech Neighbor — Coming Soon</title>
+<meta name="description" content="Your Tech Neighbor — tech solutions for homes and small business in Seneca, SC. Site launching soon.">
+<link rel="icon" type="image/png" href="logo.png">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@600;700&family=IBM+Plex+Sans:wght@400;500&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
 
-<link rel="stylesheet" href="style.css">
+<style>
+  :root {
+    --ink: #101826;
+    --slate: #4A5568;
+    --paper: #EAEEF0;
+    --surface: #FBFCFB;
+    --line: #C9D2D6;
+    --copper: #BE6A2D;
+    --copper-tint: #F4E3D3;
+    --phosphor: #2F9E71;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--paper);
+    background-image:
+      linear-gradient(90deg, rgba(16,24,38,0.035) 1px, transparent 1px),
+      linear-gradient(0deg, rgba(16,24,38,0.035) 1px, transparent 1px);
+    background-size: 34px 34px;
+    font-family: 'IBM Plex Sans', sans-serif;
+    color: var(--ink);
+    padding: 1.5rem;
+  }
+  .card {
+    max-width: 460px;
+    width: 100%;
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-left: 6px solid var(--copper);
+    border-radius: 6px;
+    box-shadow: 0 18px 40px -24px rgba(16,24,38,0.35);
+    overflow: hidden;
+    text-align: center;
+  }
+  .stub {
+    background: var(--copper-tint);
+    padding: 0.9rem 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+  .status-dot {
+    width: 7px; height: 7px;
+    border-radius: 50%;
+    background: var(--phosphor);
+  }
+  .mono {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.72rem;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    color: var(--copper);
+  }
+  .body {
+    padding: 2rem 2rem 2.25rem;
+  }
+  img.logo {
+    width: 56px;
+    height: 56px;
+    margin-bottom: 1rem;
+  }
+  h1 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 1.5rem;
+    margin: 0 0 0.75rem;
+  }
+  p {
+    color: var(--slate);
+    line-height: 1.6;
+    margin: 0 0 1.5rem;
+    font-size: 0.98rem;
+  }
+  .contact {
+    border-top: 1px solid var(--line);
+    padding-top: 1.25rem;
+    font-size: 0.95rem;
+  }
+  .contact a {
+    color: var(--ink);
+    text-decoration: none;
+    font-weight: 600;
+  }
+  .contact a:hover { color: var(--copper); }
+  .contact div { margin-bottom: 0.5rem; }
+</style>
 </head>
 <body>
 
-<!-- ============ SKIP LINK (accessibility) ============ -->
-<a class="skip-link" href="#main">Skip to content</a>
-
-<!-- ============ HEADER / NAV ============ -->
-<header class="site-header" id="top">
-  <div class="wrap header-inner">
-    <a class="logo" href="#top" aria-label="[Your Business Name] home">
-      <svg class="logo-mark" viewBox="0 0 32 32" width="30" height="30" aria-hidden="true">
-        <circle cx="8" cy="8" r="3" fill="currentColor"/>
-        <circle cx="24" cy="8" r="3" fill="currentColor"/>
-        <circle cx="16" cy="24" r="3" fill="currentColor"/>
-        <path d="M10.5 9.5 L14 21.5 M21.5 9.5 L18 21.5 M11 8 H21" stroke="currentColor" stroke-width="1.6" fill="none"/>
-      </svg>
-      <span class="logo-text">[Your Business Name]</span>
-    </a>
-
-    <nav class="main-nav" id="main-nav" aria-label="Primary">
-      <a href="#services">Services</a>
-      <a href="#work">Recent Work</a>
-      <a href="#testimonials">Testimonials</a>
-      <a href="#area">Service Area</a>
-      <a href="#contact" class="nav-cta">Get a Quote</a>
-    </nav>
-
-    <a class="header-call" href="tel:+15555550123">
-      <span class="mono-label">CALL / TEXT</span>
-      (555) 555-0123
-    </a>
-
-    <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Toggle menu">
-      <span></span><span></span><span></span>
-    </button>
+<div class="card">
+  <div class="stub">
+    <span class="status-dot"></span>
+    <span class="mono">Site under construction</span>
   </div>
-</header>
-
-<main id="main">
-
-  <!-- ============ HERO — "WORK ORDER" TICKET ============ -->
-  <section class="hero">
-    <div class="wrap hero-inner">
-
-      <div class="ticket">
-        <div class="ticket-stub">
-          <span class="mono-label">WORK ORDER</span>
-          <span class="ticket-number">#WO-2026-0001</span>
-          <span class="status-badge">
-            <span class="status-dot" aria-hidden="true"></span> OPEN
-          </span>
-        </div>
-
-        <div class="ticket-perf" aria-hidden="true"></div>
-
-        <div class="ticket-body">
-          <p class="eyebrow mono-label">TECH SOLUTIONS · [SERVICE AREA]</p>
-          <h1>If it plugs in, connects, or runs on a circuit board — there's a decent chance I can fix it.</h1>
-          <p class="hero-sub">
-            I'm the person homeowners and small businesses call when the job is too specific for
-            a big-box repair counter and too small to justify hiring an IT department. Repairs,
-            installs, networks, security, and the odd project nobody else wants to touch.
-          </p>
-
-          <p class="hero-rotator" aria-live="polite">
-            <span class="mono-label">RIGHT NOW, I COULD BE FIXING:</span>
-            <span id="rotator-text" class="rotator-text">a PC that won't boot</span>
-          </p>
-
-          <div class="hero-actions">
-            <a href="#contact" class="btn btn-primary">Tell me what's broken</a>
-            <a href="#services" class="btn btn-ghost">See everything I do</a>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- ============ ABOUT ============ -->
-  <section class="about" id="about">
-    <div class="wrap about-inner">
-      <p class="eyebrow mono-label">ABOUT</p>
-      <h2>The gap between "call the store" and "call an IT department."</h2>
-      <div class="about-columns">
-        <p>
-          Most tech problems don't fit neatly into one category. Your security cameras won't talk to
-          your Wi-Fi. Your dad's old home movies are trapped on tapes nobody makes players for anymore.
-          Your work-from-home setup needs a real network, not a router shoved in a closet. A big
-          electronics chain won't take the job, and a managed IT company won't return your call for
-          something this size.
-        </p>
-        <p>
-          That's the gap I work in. Computer science background, hands-on with hardware, and genuinely
-          interested in figuring out the project you didn't think anyone could help with — including
-          board-level repair work and specialty jobs most repair shops won't attempt. If you've got an
-          idea and no idea how to build it, that's exactly the kind of call I want.
-        </p>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============ SERVICES ============ -->
-  <section class="services" id="services">
-    <div class="wrap">
-      <p class="eyebrow mono-label">SERVICES</p>
-      <h2>What I work on</h2>
-      <p class="section-sub">Grouped by category, not by how impressive it sounds. Don't see your exact problem listed — ask anyway.</p>
-
-      <div class="service-grid">
-
-        <article class="service-card">
-          <span class="mono-label tag">REPAIR</span>
-          <h3>Repair &amp; Recovery</h3>
-          <ul>
-            <li>PC diagnostics &amp; repair</li>
-            <li>Game console / circuit board repair</li>
-            <li>Data backup &amp; recovery</li>
-            <li>Digital media conversion (tapes, film, discs)</li>
-          </ul>
-        </article>
-
-        <article class="service-card">
-          <span class="mono-label tag">BUILD</span>
-          <h3>Custom Builds &amp; Installs</h3>
-          <ul>
-            <li>Custom PC builds</li>
-            <li>Custom home tech installs</li>
-            <li>Home media servers</li>
-            <li>Smart home / IoT setup</li>
-          </ul>
-        </article>
-
-        <article class="service-card">
-          <span class="mono-label tag">NETWORK</span>
-          <h3>Networking</h3>
-          <ul>
-            <li>Home network setup &amp; troubleshooting</li>
-            <li>Small business networking</li>
-            <li>Wi-Fi dead zone fixes</li>
-            <li>Hardware &amp; equipment install</li>
-          </ul>
-        </article>
-
-        <article class="service-card">
-          <span class="mono-label tag">SECURITY</span>
-          <h3>Security &amp; Monitoring</h3>
-          <ul>
-            <li>Security camera installation</li>
-            <li>Remote viewing setup</li>
-            <li>System integration with existing network</li>
-          </ul>
-        </article>
-
-        <article class="service-card">
-          <span class="mono-label tag">ACCESS</span>
-          <h3>Accessible Tech</h3>
-          <ul>
-            <li>Handicap-accessible tech installs</li>
-            <li>Adaptive equipment setup</li>
-            <li>Home automation for accessibility</li>
-          </ul>
-        </article>
-
-        <article class="service-card highlight">
-          <span class="mono-label tag">SPECIALTY</span>
-          <h3>Got an Idea?</h3>
-          <ul>
-            <li>Vehicle remote fob programming</li>
-            <li>One-off projects &amp; odd requests</li>
-            <li>"I don't know how to build this, but here's what I want"</li>
-          </ul>
-        </article>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- ============ RECENT WORK / PORTFOLIO ============ -->
-  <section class="work" id="work">
-    <div class="wrap">
-      <p class="eyebrow mono-label">RECENT WORK</p>
-      <h2>A few examples</h2>
-      <p class="section-sub">Replace these with real before/after photos and short write-ups as you complete jobs.</p>
-
-      <div class="work-grid">
-        <article class="work-card">
-          <div class="work-thumb" aria-hidden="true">
-            <span class="mono-label">PHOTO</span>
-          </div>
-          <span class="mono-label tag">NETWORK</span>
-          <h3>Example project title</h3>
-          <p>One or two sentences describing the problem and what you did to solve it.</p>
-        </article>
-
-        <article class="work-card">
-          <div class="work-thumb" aria-hidden="true">
-            <span class="mono-label">PHOTO</span>
-          </div>
-          <span class="mono-label tag">SECURITY</span>
-          <h3>Example project title</h3>
-          <p>One or two sentences describing the problem and what you did to solve it.</p>
-        </article>
-
-        <article class="work-card">
-          <div class="work-thumb" aria-hidden="true">
-            <span class="mono-label">PHOTO</span>
-          </div>
-          <span class="mono-label tag">REPAIR</span>
-          <h3>Example project title</h3>
-          <p>One or two sentences describing the problem and what you did to solve it.</p>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============ TESTIMONIALS ============ -->
-  <section class="testimonials" id="testimonials">
-    <div class="wrap">
-      <p class="eyebrow mono-label">TESTIMONIALS</p>
-      <h2>What clients say</h2>
-      <p class="section-sub">Swap these for real quotes once you have them — even one or two genuine testimonials outperforms placeholder text.</p>
-
-      <div class="testimonial-grid">
-        <blockquote class="testimonial-card">
-          <p>"Placeholder testimonial. Replace with a real quote from a client about the specific problem you solved for them."</p>
-          <cite>— Client Name, City</cite>
-        </blockquote>
-        <blockquote class="testimonial-card">
-          <p>"Placeholder testimonial. Replace with a real quote from a client about the specific problem you solved for them."</p>
-          <cite>— Client Name, City</cite>
-        </blockquote>
-        <blockquote class="testimonial-card">
-          <p>"Placeholder testimonial. Replace with a real quote from a client about the specific problem you solved for them."</p>
-          <cite>— Client Name, City</cite>
-        </blockquote>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============ SERVICE AREA / MAP ============ -->
-  <section class="area" id="area">
-    <div class="wrap area-inner">
-      <div class="area-text">
-        <p class="eyebrow mono-label">SERVICE AREA</p>
-        <h2>Where I work</h2>
-        <p>Currently serving [City, County / list of towns] and surrounding areas within about [X] miles. Not sure if you're in range? Send a message — worst case, I'll point you toward someone who can help.</p>
-        <ul class="area-list">
-          <li>[Town / neighborhood one]</li>
-          <li>[Town / neighborhood two]</li>
-          <li>[Town / neighborhood three]</li>
-          <li>[Town / neighborhood four]</li>
-        </ul>
-      </div>
-      <div class="area-map">
-        <!--
-          Replace this iframe's src with your own Google Maps embed:
-          Google Maps → search your service area → Share → Embed a map → copy the src URL.
-        -->
-        <iframe
-          src="https://www.google.com/maps/embed?pb=REPLACE_WITH_YOUR_EMBED_CODE"
-          width="100%" height="100%" style="border:0;" allowfullscreen loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-          title="Service area map">
-        </iframe>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============ CONTACT / INTAKE FORM ============ -->
-  <section class="contact" id="contact">
-    <div class="wrap contact-inner">
-      <div class="contact-intro">
-        <p class="eyebrow mono-label">START A TICKET</p>
-        <h2>Tell me what you're trying to accomplish</h2>
-        <p>
-          Fill this out with as much or as little detail as you have — even "I'm not sure what this
-          is called but here's the problem" is a great start. I'll follow up to scope the job and,
-          once you're ready, get you a real estimate.
-        </p>
-        <div class="contact-alt">
-          <p><span class="mono-label">CALL / TEXT</span> <a href="tel:+15555550123">(555) 555-0123</a></p>
-          <p><span class="mono-label">EMAIL</span> <a href="mailto:hello@yourbusiness.com">hello@yourbusiness.com</a></p>
-        </div>
-      </div>
-
-      <form class="ticket-form" id="contact-form" action="https://formspree.io/f/REPLACE_WITH_YOUR_FORM_ID" method="POST">
-        <div class="form-row">
-          <label for="name">Name</label>
-          <input type="text" id="name" name="name" required autocomplete="name">
-        </div>
-
-        <div class="form-row form-row-split">
-          <div>
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" required autocomplete="email">
-          </div>
-          <div>
-            <label for="phone">Phone</label>
-            <input type="tel" id="phone" name="phone" autocomplete="tel">
-          </div>
-        </div>
-
-        <div class="form-row">
-          <label for="service">What kind of project is this?</label>
-          <select id="service" name="service_category" required>
-            <option value="" disabled selected>Select a category</option>
-            <option value="repair">Repair &amp; Recovery</option>
-            <option value="build">Custom Build / Install</option>
-            <option value="network">Networking</option>
-            <option value="security">Security &amp; Monitoring</option>
-            <option value="access">Accessible Tech</option>
-            <option value="specialty">Specialty / Not Sure</option>
-          </select>
-        </div>
-
-        <div class="form-row">
-          <label for="message">What are you trying to accomplish?</label>
-          <textarea id="message" name="message" rows="5" required placeholder="Describe the problem or project — the more detail, the better."></textarea>
-        </div>
-
-        <input type="hidden" name="_subject" value="New project inquiry from website">
-
-        <button type="submit" class="btn btn-primary" id="submit-btn">Send it over</button>
-        <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
-      </form>
-    </div>
-  </section>
-
-</main>
-
-<!-- ============ FOOTER ============ -->
-<footer class="site-footer">
-  <div class="wrap footer-inner">
-    <div class="footer-brand">
-      <span class="logo-text">[Your Business Name]</span>
-      <p>Tech solutions for homes &amp; small business — [Service Area].</p>
-    </div>
-
-    <nav class="footer-links" aria-label="Footer">
-      <a href="#services">Services</a>
-      <a href="#work">Recent Work</a>
-      <a href="#testimonials">Testimonials</a>
-      <a href="#contact">Get a Quote</a>
-    </nav>
-
-    <div class="footer-social" aria-label="Social media links">
-      <!-- Replace href values with your real profiles -->
-      <a href="https://facebook.com/" aria-label="Facebook">FB</a>
-      <a href="https://instagram.com/" aria-label="Instagram">IG</a>
-      <a href="https://linkedin.com/" aria-label="LinkedIn">IN</a>
-      <a href="https://youtube.com/" aria-label="YouTube">YT</a>
+  <div class="body">
+    <img class="logo" src="logo.png" alt="" width="56" height="56">
+    <h1>Your Tech Neighbor</h1>
+    <p>The full site is on the way. In the meantime, still taking on projects — reach out directly below.</p>
+    <div class="contact">
+      <div><a href="tel:+18287671587">(828) 767-1587</a></div>
+      <div><a href="mailto:hello@asktechneighbor.com">hello@asktechneighbor.com</a></div>
     </div>
   </div>
-  <div class="wrap footer-bottom">
-    <p>© <span id="year"></span> [Your Business Name]. All rights reserved.</p>
-  </div>
-</footer>
-
-<!-- ============ MOBILE STICKY CALL BAR ============ -->
-<div class="sticky-call">
-  <a href="tel:+15555550123" class="btn btn-primary btn-block">Call now</a>
-  <a href="#contact" class="btn btn-ghost btn-block">Send a message</a>
 </div>
 
-<script src="script.js"></script>
 </body>
 </html>

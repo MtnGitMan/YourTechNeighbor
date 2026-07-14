@@ -30,7 +30,7 @@ const rotatorItems = [
   'a PC that won\u2019t boot',
   'a security camera that won\u2019t connect',
   'a Wi-Fi dead zone in the back bedroom',
-  'a game console with a dead HDMI port',
+  'a console running hot and throttling',
   'a home network that keeps dropping',
   'a car fob that needs programming',
   'a media server for old family photos'
